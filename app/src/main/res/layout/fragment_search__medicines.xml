@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".Search_Medicines">
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+
+
+
+        <EditText
+            android:id="@+id/ed_search"
+            android:backgroundTint="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColorHint="@color/grey_60"
+            android:textColor="@color/black"
+            android:background="@drawable/shap_edit_box"
+            android:hint="Enter Symptom"
+            android:singleLine="true"
+            android:padding="10dp" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:id="@+id/txt_relatedMedicines"
+            android:layout_marginTop="10dp"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="30dp"
+            android:id="@+id/crd_search"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            app:cardBackgroundColor="@color/blue_500"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="3dp"
+            android:layout_gravity="center"
+            app:cardMaxElevation="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Search"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</FrameLayout>
