@@ -34,8 +34,10 @@ import java.util.Map;
 
 public class Signup extends AppCompatActivity implements View.OnClickListener {
 
+    /*Initializing*/
+
     private EditText inputEmail, inputPassword,ed_name,ed_country,ed_phone;
-  CardView crd_signup;
+    CardView crd_signup;
     private ProgressBar progressBar;
     private FirebaseAuth auth;
     private DatabaseReference mDatabase;
